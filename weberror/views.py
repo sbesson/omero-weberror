@@ -45,5 +45,5 @@ def error404(request, conn=None, **kwargs):
 @render_response()
 def error500(request, conn=None, **kwargs):
     # it is intentional that this view raise and error
-    context['template'] = template
+    context['template'] = view_raise_500
     return context
