@@ -25,16 +25,19 @@
 
 <head>
 
-    <link rel="stylesheet" href="{% static "webclient/css/fake.css" %}" type="text/css" />
+    <link rel="stylesheet" href="{% static "webclient/css/layout.css"|add:url_suffix %}" type="text/css" />
 
 </head>
 <body>
 
     <p>OMERO version {{ version }}</p>
-    
+
     <p>This page has a wrong link to css that will raise HTTP 404</p>
-    
+
     <p>Here is broken link to the image <img class="loader" alt="Loading" src="{% static "webclient/image/fake.gif" %}"></p>
-    
+
+    <p>Here is <a id="broken_link" href="{% url 'weberror404' %}1/">broken link 404</a></p>
+    <p>Here is another <a id="broken_link" href="{% url 'weberror500' %}1/">broken link 500</a></p>
+
 </body>
 </html>
