@@ -29,7 +29,7 @@ from django.views.decorators.cache import never_cache
 
 from omero_version import omero_version
 
-from omeroweb.webstart.decorators import login_required, render_response
+from omeroweb.webclient.decorators import login_required, render_response
 
 @never_cache
 @login_required()
