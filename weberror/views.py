@@ -23,13 +23,12 @@
 # Version: 1.0
 #
 
-import traceback
-
 from django.views.decorators.cache import never_cache
 
 from omero_version import omero_version
 
 from omeroweb.webclient.decorators import login_required, render_response
+
 
 @never_cache
 @login_required()
@@ -40,10 +39,11 @@ def error404(request, conn=None, **kwargs):
     context['template'] = 'weberror/404.html'
     return context
 
+
 @never_cache
 @login_required()
 @render_response()
 def error500(request, conn=None, **kwargs):
     # it is intentional that this view raise and error
-    context['template'] = view_raise_500
-    return context
+    context['template'] = view_raise_500  # noqa
+    return context  # noqa

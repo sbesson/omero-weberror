@@ -26,11 +26,8 @@
 from django.conf.urls import url, patterns
 from weberror import views
 
-urlpatterns = patterns('',
-
+urlpatterns = patterns(
+    '',
     url(r'^error_404/$', views.error404, name="weberror404"),
     url(r'^error_500/$', views.error500, name="weberror500"),
-
 )
-
-
