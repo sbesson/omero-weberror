@@ -59,4 +59,4 @@ def warning(request, conn=None, **kwargs):
     logger.info("This view writes warnings into the logfile.")
     # it is intentional that this view log py.warnings
     request.REQUEST.get("foo", None)
-    return HttpResponse('This is warning in a logfile')
+    return HttpResponse('Django 1.8+ This view creates warning in a logfile.')
