@@ -24,7 +24,7 @@
 #
 import logging
 
-from django.http import Http404, HttpResponse
+from django.http import HttpResponse
 from django.views.decorators.cache import never_cache
 
 from omero_version import omero_version
@@ -32,6 +32,7 @@ from omero_version import omero_version
 from omeroweb.webclient.decorators import login_required, render_response
 
 logger = logging.getLogger(__name__)
+
 
 @never_cache
 @login_required()
@@ -51,9 +52,11 @@ def error500(request, conn=None, **kwargs):
     context['template'] = view_raise_500  # noqa
     return context  # noqa
 
+
 @never_cache
 @render_response()
 def warning(request, conn=None, **kwargs):
+    logger.info("This view writes warnings into the logfile.")
     # it is intentional that this view log py.warnings
-    val = request.REQUEST.get("foo", None)
+    request.REQUEST.get("foo", None)
     return HttpResponse('This is warning in a logfile')
