@@ -9,6 +9,9 @@ sudo: false
 
 cache: pip
 
-before_install: pip install flake8
+before_install:
+  - pip install flake8
 
-script: flake8 -v .
+script:
+  - flake8 -v .
+  - python setup.py sdist install
