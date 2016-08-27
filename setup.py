@@ -20,18 +20,32 @@
 #
 # Version: 1.0
 
-
+import os
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
 
-setup(name="weberror",
+# Utility function to read the README file.
+# Used for the long_description.  It's nice, because now 1) we have a top level
+# README file and 2) it's easier to type in the README file than to put a raw
+# string in below ...
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
+
+VERSION = '0.1.0'
+
+
+setup(name="omeroweb-weberror",
+      packages=find_packages(exclude=['ez_setup']),
       version=VERSION,
-      description=('A high-level Python Web Client framework for OMERO'),
+      description="A Python plugin for OMERO.web",
+      long_description=read('README.rst'),
       author='The Open Microscopy Team',
       author_email='ome-devel@lists.openmicroscopy.org.uk',
       license='AGPLv3',
-      packages=find_packages(exclude=['ez_setup']),
+      url="https://github.com/openmicroscopy/weberror",
+      download_url='https://github.com/openmicroscopy/weberror/tarball/0.1.0',  # NOQA
+      keywords=['OMERO.web', 'plugin'],
       include_package_data=True,
       zip_safe=False,
       )
