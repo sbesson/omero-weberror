@@ -1,6 +1,9 @@
 .. image:: https://travis-ci.org/openmicroscopy/weberror.svg?branch=master
     :target: https://travis-ci.org/openmicroscopy/weberror
 
+.. image:: https://badge.fury.io/py/omero-weberror.svg
+    :target: https://badge.fury.io/py/omero-weberror
+
 
 OMERO.weberror
 ============================
