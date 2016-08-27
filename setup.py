@@ -35,7 +35,7 @@ def read(fname):
 VERSION = '0.1.0'
 
 
-setup(name="omeroweb-weberror",
+setup(name="omero-weberror",
       packages=find_packages(exclude=['ez_setup']),
       version=VERSION,
       description="A Python plugin for OMERO.web",
