@@ -23,7 +23,7 @@ This app installs into the OMERO.web framework.
 
 ::
 
-    $ pip install omeroweb-weberror
+    $ pip install omero-weberror
 
 Add weberror custom app to your installed web apps:
 
