@@ -7,8 +7,9 @@ python: 2.7
 # http://docs.travis-ci.com/user/workers/container-based-infrastructure/
 sudo: false
 
-cache: pip
+before_install:
+  - pip install flake8
 
-before_install: pip install flake8
-
-script: flake8 -v .
+script:
+  - flake8 -v .
+  - python setup.py sdist install
