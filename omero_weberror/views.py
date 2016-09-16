@@ -40,7 +40,7 @@ logger = logging.getLogger(__name__)
 def error404(request, conn=None, **kwargs):
     # it is intentional that this template contains broken links
     context = {"version": omero_version}
-    context['template'] = 'omero_weberror/404.html'
+    context['template'] = 'weberror/404.html'
     return context
 
 
