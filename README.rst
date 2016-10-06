@@ -29,7 +29,7 @@ Add weberror custom app to your installed web apps:
 
 ::
 
-    $ bin/omero config append omero.web.apps '"weberror"'
+    $ bin/omero config append omero.web.apps '"omero_weberror"'
 
 Now restart OMERO.web as normal.
 
