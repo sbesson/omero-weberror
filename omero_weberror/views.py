@@ -23,7 +23,7 @@
 # Version: 1.0
 #
 import logging
-
+import warnings
 from django.http import HttpResponse
 from django.views.decorators.cache import never_cache
 
@@ -56,7 +56,5 @@ def error500(request, conn=None, **kwargs):
 @never_cache
 @render_response()
 def warning(request, conn=None, **kwargs):
-    logger.info("This view writes warnings into the logfile.")
-    # it is intentional that this view log py.warnings
-    request.REQUEST.get("foo", None)
+    warnings.warn("WARN: it is intentional that this view log py.warnings")
     return HttpResponse('Django 1.8+ This view creates warning in a logfile.')

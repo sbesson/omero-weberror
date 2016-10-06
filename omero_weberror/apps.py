@@ -3,7 +3,7 @@
 #
 #
 #
-# Copyright (c) 2015 University of Dundee.
+# Copyright (c) 2016 University of Dundee.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -23,12 +23,10 @@
 # Version: 1.0
 #
 
-from django.conf.urls import url, patterns
-from weberror import views
 
-urlpatterns = patterns(
-    '',
-    url(r'^error_404/$', views.error404, name="weberror404"),
-    url(r'^error_500/$', views.error500, name="weberror500"),
-    url(r'^warning/$', views.warning, name="warning"),
-)
+from django.apps import AppConfig
+
+
+class WebErrorAppConfig(AppConfig):
+    name = "omero_weberror"
+    label = "weberror"
