@@ -1,5 +1,5 @@
-.. image:: https://travis-ci.org/openmicroscopy/weberror.svg?branch=master
-    :target: https://travis-ci.org/openmicroscopy/weberror
+.. image:: https://travis-ci.org/openmicroscopy/omero-weberror.svg?branch=master
+    :target: https://travis-ci.org/openmicroscopy/omero-weberror
 
 .. image:: https://badge.fury.io/py/omero-weberror.svg
     :target: https://badge.fury.io/py/omero-weberror
@@ -29,7 +29,7 @@ Add weberror custom app to your installed web apps:
 
 ::
 
-    $ bin/omero config append omero.web.apps '"weberror"'
+    $ bin/omero config append omero.web.apps '"omero_weberror"'
 
 Now restart OMERO.web as normal.
 
