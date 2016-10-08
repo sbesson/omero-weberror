@@ -6,13 +6,13 @@
 
 
 OMERO.weberror
-============================
-Django application that helps testing errors
+==============
+Django application that helps testing errors.
 
 Requirements
 ============
 
-* OMERO 5.1.0 or later
+* OMERO 5.1.0 or later.
 
 Installation
 ============
