@@ -7,7 +7,7 @@
 
 OMERO.weberror
 ==============
-Django application that helps testing errors.
+OMERO.web app that helps testing errors.
 
 Requirements
 ============
@@ -17,7 +17,7 @@ Requirements
 Installation
 ============
 
-Install OMERO.web
+Install OMERO.web.
 
 This app installs into the OMERO.web framework.
 
@@ -32,6 +32,12 @@ Add weberror custom app to your installed web apps:
     $ bin/omero config append omero.web.apps '"omero_weberror"'
 
 Now restart OMERO.web as normal.
+
+**Warning**:
+
+if OMERO.weberror is installed with OMERO version prior to **5.2.6**
+the url will be https://your-web-server/omero_weberror instead of https://your-web-server/weberror as previously. This is due to a package re-organization required to distribute the application using a package manager.
+If installed with OMERO **5.2.6 and older**, the url will be back to https://your-web-server/webtest.
 
 
 License
