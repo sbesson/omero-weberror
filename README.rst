@@ -7,7 +7,7 @@
 
 OMERO.weberror
 ==============
-OMERO.web app that helps testing errors.
+OMERO.web app that helps testing errors, notification logic etc.
 
 Requirements
 ============
@@ -35,7 +35,7 @@ Now restart OMERO.web as normal.
 
 **Warning**:
 
-OMERO.weberror version 0.2.x or newer is meant to be installed into OMERO.web **5.2.6 or newer**. This is due to Django Framework compatibility and a package re-organization required to distribute the application using Python Package Manager PyPi.
+OMERO.weberror version 0.2.x or newer is meant to be installed into OMERO.web **5.2.6 or newer**. This is due to Django Framework compatibility and a package reorganization required to distribute the application using Python Package Manager PyPi.
 
 
 License
