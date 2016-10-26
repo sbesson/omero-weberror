@@ -56,7 +56,7 @@ setup(name="omero-weberror",
           'Topic :: Internet :: WWW/HTTP :: WSGI',
           'Topic :: Software Development :: Libraries :: '
           'Application Frameworks',
-          'Topic :: Software Development :: Testing'
+          'Topic :: Software Development :: Testing',
           'Topic :: Text Processing :: Markup :: HTML'
       ],  # Get strings from
           # http://pypi.python.org/pypi?%3Aaction=list_classifiers
