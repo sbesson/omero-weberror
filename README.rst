@@ -36,7 +36,7 @@ Now restart OMERO.web as normal.
 **Warning**:
 
 OMERO.weberror version 0.2.x requires OMERO.web **5.2.6 or newer**.
-This is due to a Django Framework compatibility and to a required package reorganization in OMERO.weberror in version 0.2.0 so the application can be distributed from Python Package Index `PyPI <https://pypi.python.org/pypi>`_.
+This is due to Django Framework compatibility and to a required package reorganization in OMERO.weberror in version 0.2.0 so the application can be distributed from Python Package Index `PyPI <https://pypi.python.org/pypi>`_.
 
 
 License
