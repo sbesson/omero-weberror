@@ -7,19 +7,19 @@
 
 OMERO.weberror
 ==============
-Django application that helps testing errors.
+OMERO.web app that helps testing errors, notification logic etc.
 
 Requirements
 ============
 
-* OMERO 5.1.0 or later.
+* OMERO 5.2.6 or newer.
 
-Installation
-============
+Installing from PyPI
+====================
 
-Install OMERO.web
+This section assumes that an OMERO.web is already installed.
 
-This app installs into the OMERO.web framework.
+Install the app using `pip <https://pip.pypa.io/en/stable/>`_:
 
 ::
 
@@ -32,6 +32,11 @@ Add weberror custom app to your installed web apps:
     $ bin/omero config append omero.web.apps '"omero_weberror"'
 
 Now restart OMERO.web as normal.
+
+**Warning**:
+
+OMERO.weberror version 0.2.x requires OMERO.web **5.2.6 or newer**.
+This is due to Django Framework compatibility and to a required package reorganization in OMERO.weberror in version 0.2.0 so the application can be distributed from Python Package Index `PyPI <https://pypi.python.org/pypi>`_.
 
 
 License
