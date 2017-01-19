@@ -45,8 +45,7 @@ setup(name="omero-weberror",
           'Environment :: Web Environment',
           'Framework :: Django',
           'Intended Audience :: Developers',
-          'License :: OSI Approved :: GNU Affero General Public License v3 '
-          'or later (AGPLv3+)',
+          'License :: OSI Approved :: GNU Affero General Public License v3.0',
           'Natural Language :: English',
           'Operating System :: OS Independent',
           'Programming Language :: JavaScript',
@@ -62,7 +61,7 @@ setup(name="omero-weberror",
           # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       author='The Open Microscopy Team',
       author_email='ome-devel@lists.openmicroscopy.org.uk',
-      license='AGPLv3',
+      license='AGPL-3.0',
       url="https://github.com/openmicroscopy/omero-weberror",
       download_url='https://github.com/openmicroscopy/omero-weberror/tarball/%s' % VERSION,  # NOQA
       keywords=['OMERO.web', 'plugin'],
