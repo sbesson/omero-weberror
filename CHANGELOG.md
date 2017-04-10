@@ -7,7 +7,7 @@
 0.2.1 (November 2016)
 ---------------------
 
-- Update intructions and classifiers
+- Update instructions and classifiers
 
 0.2.0 (October 2016)
 --------------------
