@@ -9,6 +9,7 @@
 
 # 0.2.0 (October 2016)
 
+    - Change package structure
     - Release the app from PyPI
 
 # 0.1.0 (September 2016)
