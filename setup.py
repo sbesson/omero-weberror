@@ -58,7 +58,6 @@ setup(name="omero-weberror",
           'Topic :: Text Processing :: Markup :: HTML'
       ],  # Get strings from
           # http://pypi.python.org/pypi?%3Aaction=list_classifiers
-          # 'License :: OSI Approved :: GNU Affero General Public License v3.0',
       author='The Open Microscopy Team',
       author_email='ome-devel@lists.openmicroscopy.org.uk',
       license='AGPL-3.0',
