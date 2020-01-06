@@ -12,7 +12,7 @@ OMERO.web app that helps testing errors, notification logic etc.
 Requirements
 ============
 
-* OMERO 5.2.6 or newer.
+* OMERO 5.6 or newer.
 
 Installing from PyPI
 ====================
@@ -29,14 +29,9 @@ Add weberror custom app to your installed web apps:
 
 ::
 
-    $ bin/omero config append omero.web.apps '"omero_weberror"'
+    $ omero config append omero.web.apps '"omero_weberror"'
 
 Now restart OMERO.web as normal.
-
-**Warning**:
-
-OMERO.weberror version 0.2.x requires OMERO.web **5.2.6 or newer**.
-This is due to Django Framework compatibility and to a required package reorganization in OMERO.weberror in version 0.2.0 so the application can be distributed from Python Package Index `PyPI <https://pypi.org>`_.
 
 
 License
@@ -47,4 +42,4 @@ OMERO.weberror is released under the AGPL.
 Copyright
 ---------
 
-2016-2017, The Open Microscopy Environment
+2016-2020, The Open Microscopy Environment
