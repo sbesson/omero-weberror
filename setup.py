@@ -64,6 +64,7 @@ setup(name="omero-weberror",
       url="https://github.com/ome/omero-weberror",
       download_url='https://github.com/ome/omero-weberror/tarball/%s' % VERSION,  # NOQA
       keywords=['OMERO.web', 'plugin'],
+      install_requires=['omero-web>=5.6.dev7'],
       python_requires='>=3',
       include_package_data=True,
       zip_safe=False,

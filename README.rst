@@ -12,7 +12,7 @@ OMERO.web app that helps testing errors, notification logic etc.
 Requirements
 ============
 
-* OMERO 5.6 or newer.
+* OMERO.web 5.6 or newer.
 
 Installing from PyPI
 ====================
