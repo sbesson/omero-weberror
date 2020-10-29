@@ -1,0 +1,22 @@
+---
+name: OMERO
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Run integration tests against OMERO
+    runs-on: ubuntu-latest
+    env:
+      # Supported stages: app, cli, lib, scripts
+      STAGE: app
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checkout omero-test-infra
+        uses: actions/checkout@master
+        with:
+          repository: ome/omero-test-infra
+          path: .omero
+      - name: Build and run OMERO tests
+        run: .omero/docker $STAGE
